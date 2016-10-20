@@ -1,0 +1,6 @@
+# 编译和安装头文件和库文件，方便他人开发
+# build and install
+mkdir build ＆＆ cd build 
+cmake -DCMAKE_INSTALL_PREFIX=/usr .. 
+make 
+make install 

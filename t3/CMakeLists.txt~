@@ -1,0 +1,8 @@
+PROJECT(HELLO)
+
+#增加子文件夹,
+ADD_SUBDIRECTORY( ${PROJECT_SOURCE_DIR}/src lib)
+
+
+
+

@@ -1,0 +1,10 @@
+PROJECT(HELLO)
+
+#增加子文件夹，也就是进入源代码文件夹继续构建
+ADD_SUBDIRECTORY(src bin)
+INSTALL(FILES README COPYRIGHT DESTINATION share/doc/cmake/t2) # 普通文件按张
+INSTALL(PROGRAMS hello.sh DESTINATION bin) #其他可执行文件按安装，如脚本
+INSTALL(DIRECTORY doc/  DESTINATION share/doc/cmake/t2) #目录的安装
+
+
+

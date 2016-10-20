@@ -1,0 +1,7 @@
+# cmake 是注意使用CMAKE_INSTALL_PREFIX 参数
+# build and install
+mkdir build ＆＆ cd build 
+cmake -DCMAKE_INSTALL_PREFIX=/tmp/t2/usr .. (安装在/tmp/t2下) or cmake -DCMAKE_INSTALL_PREFIX=/usr ..安装到系统 
+or cmake .. CMAKE_INSTALL_PREFIX默认定义为/usr/local，即安装到/usr/local
+make 
+make install 

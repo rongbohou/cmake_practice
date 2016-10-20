@@ -1,0 +1,11 @@
+#在src/CMakeLists.txt 添加 INCLUDE_DIRECTORIES( /usr/include/hello  ) 加载头文件，main.cpp #include<hello.h>即可。
+
+# 由于头文件安装在系统，src/CMakeLists.txt 可以没有INCLUDE_DIRECTORIES( /usr/include/hello  )，修改 main.cpp #include<hello/hello.h>即可。
+
+#在.bashrc 文件添加 export CMAKE_INCLUDE_PATH=/usr/include/hello
+修改 src/CMakeLists.txt 中INCLUDE_DIRECTORIES( /usr/include/hello  ) 为
+FIND_PATH(helloheader hello.h)
+IF(helloheader)
+INCLUDE_DIRECTORIES( ${helloheader}  )
+ENDIF(helloheader)
+

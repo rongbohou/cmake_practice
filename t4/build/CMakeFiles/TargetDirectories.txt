@@ -1,0 +1,1 @@
+/home/bobo/code/cmake_practice/t4/build/lib/CMakeFiles/hello.dir
